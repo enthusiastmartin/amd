@@ -1,14 +1,16 @@
 use crate::amd::Control;
-use std::mem::size_of;
+use core::mem::size_of;
 
 pub fn control(control: &Control) {
     let alpha = control.dense;
 
+    /*
     print!(
         "\nAMD: approximate minimum degree ordering
     dense row parameter: {}\n",
         alpha
     );
+
 
     if alpha < 0.0 {
         println!("    no rows treated as dense")
@@ -27,4 +29,6 @@ pub fn control(control: &Control) {
     }
 
     print!("    size of AMD integer: {}\n\n", size_of::<isize>());
+
+     */
 }

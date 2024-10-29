@@ -3,7 +3,9 @@ use crate::amd_2::amd_2;
 use crate::internal::*;
 use crate::valid::valid;
 use num_traits::PrimInt;
-use std::fmt::Display;
+use core::fmt::Display;
+use alloc::vec::Vec;
+use alloc::vec;
 
 pub fn amd_1<I: PrimInt + Display>(
     n: I,

@@ -3,6 +3,8 @@ use crate::amd::*;
 // use crate::internal::EMPTY;
 use crate::internal::*;
 use crate::valid::valid;
+use alloc::vec::Vec;
+use alloc::vec;
 
 use num_traits::{NumAssignOps, PrimInt};
 

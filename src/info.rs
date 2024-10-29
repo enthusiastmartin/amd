@@ -1,6 +1,7 @@
 use crate::amd::{Info, Status};
 
 pub fn info(info: &Info) {
+    /*
     println!("\nAMD results:");
 
     let n = info.n;
@@ -112,4 +113,6 @@ pub fn info(info: &Info) {
     );
     println!();
     // }
+
+     */
 }

@@ -18,6 +18,7 @@ pub fn dump(
     w: &[usize],
     nel: isize,
 ) {
+    /*
     debug_assert!(pfree <= iwlen);
     debug3_print!("\nAMD dump, pfree: {}\n", pfree);
     for i in 0..n {
@@ -118,4 +119,6 @@ pub fn dump(
         }
         debug_assert!(cnt == n as isize - nel);
     }
+
+     */
 }

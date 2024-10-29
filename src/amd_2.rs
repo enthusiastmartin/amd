@@ -4,8 +4,12 @@ use crate::dump::dump;
 use crate::internal::*;
 use crate::postorder::postorder;
 use num_traits::PrimInt;
-use std::cmp::{max, min};
-use std::fmt::Display;
+use core::cmp::{max, min};
+use core::fmt::Display;
+use alloc::vec::Vec;
+use alloc::vec;
+
+use crate::num_traits::Float;
 
 fn clear_flag(wflg: usize, wbig: usize, w: &mut [usize], n: usize) -> usize {
     if wflg < 2 || wflg >= wbig {

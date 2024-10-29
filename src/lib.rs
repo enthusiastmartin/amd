@@ -1,6 +1,14 @@
+
+#![no_std]
+
+extern crate alloc;
+
 /// Copyright (c) 1996-2015 Timothy A. Davis, Patrick R. Amestoy and Iain S. Duff.
 /// Copyright (c) 2011-2021 Richard Lincoln.
 /// All Rights Reserved.
+///
+
+
 extern crate num_traits;
 
 mod aat;
@@ -25,8 +33,9 @@ pub use control::control;
 pub use info::info;
 use internal::*;
 use preprocess::preprocess;
-use std::cmp::max;
-use std::fmt::Display;
+use core::cmp::max;
+use core::fmt::Display;
+use alloc::vec::Vec;
 use valid::valid;
 
 pub fn order<I: PrimInt + NumAssignOps + Display>(

@@ -1,5 +1,7 @@
 use crate::internal::*;
 use crate::post_tree::post_tree;
+use alloc::vec::Vec;
+use alloc::vec;
 
 pub fn postorder(nn: usize, parent: &[isize], nv: &[isize], f_size: &[isize]) -> Vec<isize> {
     // output

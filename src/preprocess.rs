@@ -2,7 +2,9 @@ use crate::amd::*;
 use crate::internal::*;
 use crate::valid::*;
 use num_traits::{NumAssignOps, PrimInt};
-use std::cmp::max;
+use core::cmp::max;
+use alloc::vec::Vec;
+use alloc::vec;
 
 pub fn preprocess<I: PrimInt + NumAssignOps>(n: I, a_p: &[I], a_i: &[I]) -> (Vec<I>, Vec<I>) {
     let un = n.to_usize().unwrap();
